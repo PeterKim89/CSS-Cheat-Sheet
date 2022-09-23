@@ -1,14 +1,16 @@
 :root {
---header-color: purple;
+--header-color: rgb(169, 231, 233);
 --main-background: rgba(16, 16, 16, 0.513);
 --card-background: linear-gradient(to top, purple, rgb(173, 137, 137));
+--card-text-color: white;
 }
 
 html {
     background: var(--main-background)
 }
 header {
-    
+    margin: 25px;
+    padding: 10px;
     text-align: center;
     
 }
@@ -19,7 +21,10 @@ header h1 {
     
 }
 header p {
-    
+    margin-top: 10px;
+    padding: 5px;
+    color: white;
+    font-size: 1rem;
 }
 
 main {
