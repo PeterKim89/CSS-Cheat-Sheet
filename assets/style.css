@@ -1,5 +1,6 @@
 :root {
 --header-color: rgb(169, 231, 233);
+--padding: 5px;
 --main-background: rgba(16, 16, 16, 0.513);
 --card-background: linear-gradient(to top, purple, rgb(173, 137, 137));
 --card-text-color: white;
@@ -7,6 +8,7 @@
 --code-card-text-color: black;
 --border-color: white;
 --border-radius: 10px;
+--border-width: 2px;
 }
 
 html {
@@ -14,7 +16,7 @@ html {
 }
 header {
     margin: 25px;
-    padding: 10px;
+    padding: var(--padding);
     text-align: center;
     
 }
@@ -26,7 +28,7 @@ header h1 {
 }
 header p {
     margin-top: 10px;
-    padding: 5px;
+    padding: var(--padding);
     color: white;
     font-size: 1rem;
 }
@@ -37,9 +39,9 @@ main {
 }
 
 .card {
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
     flex: 1 1 30%;
-    padding: 5px;
+    padding: var(--padding);
     margin: 15px;
     border-style: dashed;
     border-color: var(--border-color);
@@ -50,10 +52,11 @@ main {
     color: var(--header-color);
     font-size: 2rem;
     border-style: solid;
-    border-width: 2px;
+    border-width: var(--border-width);
     border-radius: var(--border-radius);
     border-color: var(--border-color);
-    padding: 5px;
+    padding: var(--padding);
+    text-align: center;
 }
 
 .card p {
@@ -61,14 +64,16 @@ main {
     margin-bottom: 15px;
     color: var(--card-text-color);
     font-size: 16px;
+    text-align: center;
 }
 
 .code-card {
     border: solid;
     margin: 25px;
-    padding: 10px;
+    padding: var(--padding);
     border-radius: var(--border-radius);
     border-color: var(--border-color);
+    border-width: var(--border-width);
     color: var(--code-card-text-color);
     background: var(--code-card-background);
     user-select: all;
@@ -83,7 +88,7 @@ code {
 
 footer {
     margin: 15px;
-    padding: 10px;
+    padding: var(--padding);
     text-align: center;
     
 }
