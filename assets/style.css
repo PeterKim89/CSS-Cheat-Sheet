@@ -1,0 +1,26 @@
+:root {
+--header-color: purple;
+--background: rgba(16, 16, 16, 0.513);
+}
+
+html {
+    background-color: var(--background)
+}
+header {
+    
+    text-align: center;
+    
+}
+header h1 {
+    font-size: 2rem;
+    flex-wrap: wrap;
+    color: var(--header-color);
+    
+}
+header p {
+    
+}
+
+main {
+    display: flex;
+}
